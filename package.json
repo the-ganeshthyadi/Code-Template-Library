@@ -1,0 +1,77 @@
+{
+  "name": "code-template-library",
+  "displayName": "Code Template Library",
+  "description": "A VS Code extension for managing custom code templates.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:code-template-library.createTemplate",
+    "onCommand:code-template-library.listTemplates",
+    "onCommand:code-template-library.deleteTemplate"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "code-template-library.createTemplate",
+        "title": "Create Template"
+      },
+      {
+        "command": "code-template-library.listTemplates",
+        "title": "Template Library"
+      },
+      {
+        "command": "code-template-library.deleteTemplate",
+        "title": "Template Library: Delete"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "code-template-library.createTemplate",
+          "group": "templates",
+          "when": "editorTextFocus"
+        },
+        {
+          "command": "code-template-library.listTemplates",
+          "group": "templates",
+          "when": "editorTextFocus"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "code-template-library.createTemplate",
+          "when": "editorTextFocus"
+        },
+        {
+          "command": "code-template-library.listTemplates",
+          "when": "editorTextFocus"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.92.0",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.11.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.4.0"
+  }
+}
