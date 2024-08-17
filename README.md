@@ -1,25 +1,25 @@
 Here’s a sample `README.md` file for your VS Code extension project, including installation instructions, features, and usage details:
 
-```markdown
-# Code Template Library
+## Code Template Library
 
-## Description
+### Description
 
 The **Code Template Library** is a Visual Studio Code extension that allows developers to manage and use custom code templates efficiently. With this extension, you can simply create (editing and deleting can be done just by accessing the file in the templates folder) and insert code templates directly from the VS Code editor.
 
-## Features
+### Features
 
-- **Create Template**: Save selected text or create a new template with custom content.
-- **Template Library**: Access and insert your templates with the by a click.
+- Create Template: Save selected text or create a new template with custom content.
+- Template Library: Access and insert your templates with the by a click.
 
-## Installation
+
+### Installation
 
 1. **Clone the Repository**
 
-   ```bash
-   git clone <repository-url>
+```
+   git clone https://github.com/the-ganeshthyadi/code-template-library
    cd code-template-library
-   ```
+```
 
 2. **Install Dependencies**
 
@@ -63,6 +63,8 @@ The **Code Template Library** is a Visual Studio Code extension that allows deve
 
 ## Usage
 
+
+![[2024-08-17 09-53-32.mkv]]
 ### Commands
 
 1. **Create Template**
@@ -103,5 +105,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For questions or feedback, please open an issue or contact us via [email](the.ganeshthyadi@gmail.com).
 
 ```
-
 Feel free to modify the content to better fit your specific needs or add any additional sections as needed.
