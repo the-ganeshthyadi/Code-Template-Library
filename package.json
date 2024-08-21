@@ -2,7 +2,7 @@
   "name": "code-template-library",
   "displayName": "Code Template Library",
   "description": "A VS Code extension for managing custom code templates.",
-  "version": "0.0.2",
+  "version": "0.0.8",
   "engines": {
     "vscode": "^1.92.0"
   },

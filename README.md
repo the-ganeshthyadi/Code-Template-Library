@@ -1,4 +1,3 @@
-Here’s a sample `README.md` file for your VS Code extension project, including installation instructions, features, and usage details:
 
 ## Code Template Library
 
@@ -62,9 +61,6 @@ The **Code Template Library** is a Visual Studio Code extension that allows deve
    ```
 
 ## Usage
-
-
-![[2024-08-17 09-53-32.mkv]]
 ### Commands
 
 1. **Create Template**
